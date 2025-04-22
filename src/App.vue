@@ -3,6 +3,8 @@
   <main class="site-main">
   <SiteBanner/>
   <AboutSection/>
+  <SkillSection/>
+  <ExperienceSection/>
   </main>
 </template>
 
@@ -10,6 +12,8 @@
 import AppHeader from './components/AppHeader.vue'
 import SiteBanner from './components/SiteBanner.vue'
 import AboutSection from './components/AboutSection.vue'
+import SkillSection from './components/SkillSection.vue';
+import ExperienceSection from './components/ExperienceSection.vue';
 
 
 export default {
@@ -17,7 +21,9 @@ export default {
   components: {
     AppHeader,
     SiteBanner,
-    AboutSection
+    AboutSection,
+    SkillSection,
+    ExperienceSection
   }
 }
 </script>
