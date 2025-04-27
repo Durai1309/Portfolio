@@ -1,8 +1,8 @@
 <template>
     <section class="brand-area site-main">
         <div class="col-lg-12 text-center services-title">
-  <h1 class="text-uppercase title-text" style="font-size: 2.1rem; margin-top: 4rem;">Skills</h1>
-</div>
+            <h1 class="text-uppercase title-text" style="font-size: 2.1rem; margin-top: 4rem;">Skills</h1>
+        </div>
         <div class="container-fluid">
             <div class="row first-row">
 
