@@ -5,6 +5,7 @@
   <AboutSection/>
   <SkillSection/>
   <ExperienceSection/>
+  <EducationSection/>
   </main>
 </template>
 
@@ -14,6 +15,8 @@ import SiteBanner from './components/SiteBanner.vue'
 import AboutSection from './components/AboutSection.vue'
 import SkillSection from './components/SkillSection.vue';
 import ExperienceSection from './components/ExperienceSection.vue';
+import EducationSection from './components/EducationSection.vue';
+
 
 
 export default {
@@ -23,7 +26,8 @@ export default {
     SiteBanner,
     AboutSection,
     SkillSection,
-    ExperienceSection
+    ExperienceSection,
+    EducationSection
   }
 }
 </script>
