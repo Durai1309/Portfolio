@@ -3,6 +3,7 @@
 
 @import url(./partials/_global.css);
 
+@import "tailwindcss";
 
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;

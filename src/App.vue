@@ -6,6 +6,7 @@
   <SkillSection/>
   <ExperienceSection/>
   <EducationSection/>
+  <ContactSection/>
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import AboutSection from './components/AboutSection.vue'
 import SkillSection from './components/SkillSection.vue';
 import ExperienceSection from './components/ExperienceSection.vue';
 import EducationSection from './components/EducationSection.vue';
+import ContactSection from './components/ContactSection.vue';
 
 
 
@@ -27,7 +29,8 @@ export default {
     AboutSection,
     SkillSection,
     ExperienceSection,
-    EducationSection
+    EducationSection,
+    ContactSection
   }
 }
 </script>
