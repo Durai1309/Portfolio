@@ -1,38 +1,36 @@
 <template>
   <section class="education py-5 bg-white" aria-labelledby="education-heading">
     <div class="container">
-      <h2 id="education-heading" class="text-center mb-5 font-weight-bold">My Education</h2>
-      
+      <h2 class="education-heading">My Education</h2>
       <div class="row g-4">
+        <!-- Bachelor's Degree -->
         <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-lg border-light" tabindex="0" aria-describedby="bachelor-desc">
+          <div class="education-card" tabindex="0" aria-describedby="bachelor-desc">
             <div class="card-body">
-              <h5 class="mb-0 font-weight-bold">Bachelor of Engineering</h5>
-              <p class="text-muted mb-2">St. Xavier's Catholic College of Engineering</p>
-              <h6 class="card-subtitle mb-2 text-muted">
+              <h5>Bachelor of Engineering</h5>
+              <p class="institution">St. Xavier's Catholic College of Engineering</p>
+              <h6 class="duration">
                 <time datetime="2018-08">Aug 2018</time> - <time datetime="2022-06">Jun 2022</time>
               </h6>
-              <p id="bachelor-desc" class="card-text">Computer Science</p>
-              <div class="d-flex small text-muted">
-                <div>
-                  <i class="fas fa-star me-1 text-warning" aria-hidden="true"></i> CGPA: 8.0
-                </div>
+              <p id="bachelor-desc" class="field">Computer Science Engineering</p>
+              <div class="grade">
+                <i class="fas fa-star"></i> CGPA: 8.0
               </div>
             </div>
           </div>
         </div>
+
+        <!-- 12th Grade -->
         <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-lg border-light" tabindex="0" aria-describedby="twelfth-desc">
+          <div class="education-card" tabindex="0" aria-describedby="twelfth-desc">
             <div class="card-body">
-              <h5 class="mb-0 font-weight-bold">Higher Secondary (12th)</h5>
-              <p class="text-muted mb-2">Shalom Matriculation Hr. Sec. School</p>
-              <h6 class="card-subtitle mb-2 text-muted">
+              <h5>Higher Secondary (12th)</h5>
+              <p class="institution">Shalom Matriculation Hr. Sec. School</p>
+              <h6 class="duration">
                 <time datetime="2017-06">Jun 2017</time> - <time datetime="2018-04">Apr 2018</time>
               </h6>
-              <div class="d-flex small text-muted" id="twelfth-desc">
-                <div>
-                  <i class="fas fa-percentage me-1 text-danger" aria-hidden="true"></i> Grade: 70%
-                </div>
+              <div class="grade" id="twelfth-desc">
+                <i class="fas fa-percentage"></i> Grade: 70%
               </div>
             </div>
           </div>
@@ -40,17 +38,15 @@
         
         <!-- 10th Grade -->
         <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-lg border-light" tabindex="0" aria-describedby="tenth-desc">
+          <div class="education-card" tabindex="0" aria-describedby="tenth-desc">
             <div class="card-body">
-              <h5 class="mb-0 font-weight-bold">Secondary School (10th)</h5>
-              <p class="text-muted mb-2">St. Assisi Matriculation Hr. Sec. School</p>
-              <h6 class="card-subtitle mb-2 text-muted">
+              <h5>Secondary School (10th)</h5>
+              <p class="institution">St. Assisi Matriculation Hr. Sec. School</p>
+              <h6 class="duration">
                 <time datetime="2015-06">Jun 2015</time> - <time datetime="2016-05">May 2016</time>
               </h6>
-              <div class="d-flex small text-muted" id="tenth-desc">
-                <div>
-                  <i class="fas fa-percentage me-1 text-success" aria-hidden="true"></i> Grade: 88%
-                </div>
+              <div class="grade" id="tenth-desc">
+                <i class="fas fa-percentage"></i> Grade: 88%
               </div>
             </div>
           </div>
@@ -62,88 +58,136 @@
 
 <style scoped>
 .education {
-  background-color: #fff !important;
+  background-color: #fff;
+  font-family: var(--roboto);
 }
 
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none;
+.education-heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 3rem;
+  font-family: var(--roboto);
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.education-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   cursor: pointer;
+  height: 100%;
+  box-shadow: 
+    0 6px 10px rgba(0, 0, 0, 0.08),
+    0 12px 30px rgba(0, 0, 0, 0.08);
+  background: white;
+  font-family: var(--roboto);
 }
 
-.card:hover,
-.card:focus {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-  outline: none;
-}
-
-.text-primary {
-  color: #007bff !important;
-}
-
-.bg-primary {
-  background-color: #007bff !important;
-}
-
-.text-info {
-  color: #17a2b8 !important;
-}
-
-.bg-info {
-  background-color: #17a2b8 !important;
-}
-
-.text-success {
-  color: #28a745 !important;
-}
-
-.bg-success {
-  background-color: #28a745 !important;
-}
-
-.font-weight-bold {
-  font-weight: 600;
+.education-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 
+    0 12px 20px rgba(0, 0, 0, 0.15),
+    0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
 .card-body {
-  padding: 1.5rem;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .card-body h5 {
-  font-size: 1.2rem;
-  color: #333;
+  font-size: 1.25rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 0;
+  font-family: var(--roboto);
 }
 
-.card-body p {
-  font-size: 0.9rem;
+.institution {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  margin: 0.5rem 0 0;
+  font-family: var(--roboto);
 }
 
-.card-body h6 {
+.duration {
+  color: #7f8c8d;
   font-size: 0.85rem;
-}
-
-.card-body .small {
-  font-size: 0.8rem;
-}
-
-.card-subtitle {
   font-weight: 500;
-  font-size: 0.85rem;
+  margin: 0;
+  font-family: var(--roboto);
+}
+
+.field {
+  color: #34495e;
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+  font-family: var(--roboto);
+}
+
+.grade {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: var(--roboto);
+}
+
+.fa-star {
+  color: #f39c12;
+}
+
+.fa-percentage {
+  color: #e74c3c;
+}
+
+.grade:last-child .fa-percentage {
+  color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.4rem;
+    gap: 0.7rem;
+  }
+  
+  .education-heading {
+    font-size: 1.8rem;
+    margin: 1.5rem 0 2.5rem;
+  }
 }
 
 @media (max-width: 576px) {
-  .card-body h5 {
-    font-size: 1rem;
+  .card-body {
+    padding: 1.2rem;
+    gap: 0.6rem;
   }
-
-  .card-body p {
+  
+  .card-body h5 {
+    font-size: 1.1rem;
+  }
+  
+  .institution {
     font-size: 0.85rem;
   }
-
-  .card-body h6 {
-    font-size: 0.75rem;
+  
+  .education-card {
+    box-shadow: 
+      0 4px 6px rgba(0, 0, 0, 0.08),
+      0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .education-card:hover {
+    box-shadow: 
+      0 8px 15px rgba(0, 0, 0, 0.12),
+      0 15px 35px rgba(0, 0, 0, 0.12);
   }
 }
 </style>
