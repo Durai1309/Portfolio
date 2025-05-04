@@ -3,7 +3,6 @@
     <div class="container">
       <h2 class="education-heading">My Education</h2>
       <div class="row g-4">
-        <!-- Bachelor's Degree -->
         <div class="col-md-6 col-lg-4">
           <div class="education-card" tabindex="0" aria-describedby="bachelor-desc">
             <div class="card-body">
@@ -20,7 +19,6 @@
           </div>
         </div>
 
-        <!-- 12th Grade -->
         <div class="col-md-6 col-lg-4">
           <div class="education-card" tabindex="0" aria-describedby="twelfth-desc">
             <div class="card-body">
@@ -35,8 +33,7 @@
             </div>
           </div>
         </div>
-        
-        <!-- 10th Grade -->
+
         <div class="col-md-6 col-lg-4">
           <div class="education-card" tabindex="0" aria-describedby="tenth-desc">
             <div class="card-body">
@@ -78,7 +75,7 @@
   border-radius: 12px;
   cursor: pointer;
   height: 100%;
-  box-shadow: 
+  box-shadow:
     0 6px 10px rgba(0, 0, 0, 0.08),
     0 12px 30px rgba(0, 0, 0, 0.08);
   background: white;
@@ -88,7 +85,7 @@
 .education-card:hover {
   transform: translateY(-8px);
   border-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 
+  box-shadow:
     0 12px 20px rgba(0, 0, 0, 0.15),
     0 20px 50px rgba(0, 0, 0, 0.15);
 }
@@ -157,7 +154,7 @@
     padding: 1.4rem;
     gap: 0.7rem;
   }
-  
+
   .education-heading {
     font-size: 1.8rem;
     margin: 1.5rem 0 2.5rem;
@@ -169,23 +166,23 @@
     padding: 1.2rem;
     gap: 0.6rem;
   }
-  
+
   .card-body h5 {
     font-size: 1.1rem;
   }
-  
+
   .institution {
     font-size: 0.85rem;
   }
-  
+
   .education-card {
-    box-shadow: 
+    box-shadow:
       0 4px 6px rgba(0, 0, 0, 0.08),
       0 8px 20px rgba(0, 0, 0, 0.08);
   }
-  
+
   .education-card:hover {
-    box-shadow: 
+    box-shadow:
       0 8px 15px rgba(0, 0, 0, 0.12),
       0 15px 35px rgba(0, 0, 0, 0.12);
   }

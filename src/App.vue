@@ -1,13 +1,13 @@
 <template>
-  <AppHeader/>
+  <AppHeader />
   <main class="site-main">
-  <SiteBanner/>
-  <AboutSection/>
-  <SkillSection/>
-  <ExperienceSection/>
-  <EducationSection/>
-  <ProjectSection/>
-  <ContactSection/>
+    <SiteBanner id="home" />
+    <AboutSection id="about" />
+    <SkillSection id="skills" />
+    <ExperienceSection id="experience" />
+    <EducationSection id="education" />
+    <ProjectSection id="projects" />
+    <ContactSection id="contact" />
   </main>
 </template>
 
@@ -38,5 +38,4 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<style></style>
