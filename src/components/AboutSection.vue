@@ -8,7 +8,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 about-title">
-                    <h1 class="text-uppercase title-text" style="font-size: 2.1rem; font-family: var(--roboto);">About Me</h1>
+                    <h1 class="text-uppercase title-text" style="font-size: 2.1rem; font-family: var(--roboto);">About
+                        Me</h1>
 
                     <div class="paragraph py-4 w-75">
                         <p class="para" style="font-family: var(--roboto);">

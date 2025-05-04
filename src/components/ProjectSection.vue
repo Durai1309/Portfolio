@@ -15,20 +15,19 @@
               <img :src="project.image" class="project-image" :alt="project.title">
             </div>
           </div>
-          
+
           <div class="card-body p-4">
             <div class="d-flex justify-content-between align-items-start mb-3">
               <h3 class="project-title mb-0">{{ project.title }}</h3>
               <div class="tech-stack">
-                <!-- Tech pills would go here -->
               </div>
             </div>
-            
+
             <p class="project-description mb-4">{{ project.description }}</p>
-            
+
             <div class="d-flex align-items-center justify-content-between mt-auto">
-              <a :href="project.liveLink" class="btn btn-primary btn-pill px-4">
-                <i class="bi bi-eye me-2"></i>Live Demo
+              <a :href="project.codeLink" class="btn btn-primary btn-pill px-4">
+                <i class="bi bi-eye me-2"></i>Code Link
               </a>
               <div class="project-meta">
                 <span class="text-muted me-3"><i class="bi bi-calendar me-1"></i>{{ project.date }}</span>
@@ -49,20 +48,19 @@ const projects = [
     description: "E-commerce project using .NET Core, Web API, REST API, MVC, microservices architecture, SQL Server, Entity Framework Core, Dependency Injection, Swagger, and implementing SOLID principles for maintainable and scalable code.",
     image: require('@/assets/Ecommerce.jpg'),
     liveLink: "#",
-    codeLink: "#",
+    codeLink: "https://github.com/Durai1309/E-commerce",
   },
   {
     title: "BookSeries",
     description: "BookSeries project using .NET Core, MVC, Clean Architecture, SQL Server, Entity Framework Core, Repository Design Pattern, Dependency Injection, and implementing SOLID principles for maintainable and scalable code.",
     image: require('@/assets/Book.jpg'),
     liveLink: "#",
-    codeLink: "#",
+    codeLink: "https://github.com/Durai1309/BookSeries",
   }
 ];
 </script>
 
 <style scoped>
-/* Typography */
 .section-heading {
   text-transform: uppercase;
   text-align: center;
@@ -81,7 +79,6 @@ const projects = [
   line-height: 1.6;
 }
 
-/* Project Card */
 .quality-project-card {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -124,7 +121,6 @@ const projects = [
   font-family: var(--roboto);
 }
 
-/* Buttons & Meta */
 .btn-pill {
   border-radius: 50px;
   font-weight: 500;
@@ -153,16 +149,15 @@ const projects = [
   font-family: var(--roboto);
 }
 
-/* Responsive */
 @media (max-width: 767.98px) {
   .project-image-wrapper {
     height: 180px;
   }
-  
+
   .card-body {
     padding: 1.5rem;
   }
-  
+
   .section-heading {
     font-size: 1.75rem;
   }

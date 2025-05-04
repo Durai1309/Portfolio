@@ -3,7 +3,6 @@
     <div class="container px-3 px-md-5">
       <h2 class="section-heading">Work Experience</h2>
       <div class="timeline-wrapper">
-        <!-- Current Position -->
         <div class="position-card shadow-lg mb-5">
           <div class="position-header">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
@@ -187,12 +186,12 @@ export default {
     font-size: 1.75rem;
     margin: 1.5rem 0 2rem;
   }
-  
+
   .position-header,
   .position-body {
     padding: 1.25rem;
   }
-  
+
   .position-title {
     font-size: 1.2rem;
   }
