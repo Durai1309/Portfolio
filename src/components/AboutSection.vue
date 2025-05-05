@@ -1,15 +1,16 @@
 <template>
-    <section class="about-area">
+    <section class="about-area" id="about">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 d-none d-md-block">
                     <div class="about-image">
                         <img src="@/assets/banner-imagess.png" alt="About us" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 about-title">
-                    <h1 class="text-uppercase title-text" style="font-size: 2.1rem; font-family: var(--roboto);">About
-                        Me</h1>
+                    <h1 class="text-uppercase title-text" style="font-size: 2.1rem; font-family: var(--roboto);">
+                        About Me
+                    </h1>
 
                     <div class="paragraph py-4 w-75">
                         <p class="para" style="font-family: var(--roboto);">
@@ -31,3 +32,19 @@
         </div>
     </section>
 </template>
+
+<style scoped>
+@media (max-width: 767.98px) {
+    .title-text {
+        text-align: center;
+    }
+
+    .para {
+        text-align: justify;
+    }
+
+    .paragraph {
+        width: 100% !important;
+    }
+}
+</style>

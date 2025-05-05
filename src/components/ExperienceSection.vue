@@ -3,7 +3,7 @@
     <div class="container px-3 px-md-5">
       <h2 class="section-heading">Work Experience</h2>
       <div class="timeline-wrapper">
-        <div class="position-card shadow-lg mb-5">
+        <div class="position-card mb-5">
           <div class="position-header">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
               <div>
@@ -49,7 +49,7 @@
         </div>
 
         <!-- Previous Position -->
-        <div class="position-card shadow mb-5">
+        <div class="position-card mb-5">
           <div class="position-header">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
               <div>
@@ -100,7 +100,7 @@ export default {
 
 <style scoped>
 .experience-section {
-  background-color: white;
+  background-color: #ffffff;
   font-family: var(--roboto);
 }
 
@@ -109,92 +109,115 @@ export default {
   text-align: center;
   font-size: 2rem;
   margin: 2rem 0 3rem;
-  font-family: var(--roboto);
-  font-weight: 700;
+  font-weight: 600;
   color: #2c3e50;
 }
 
 .position-card {
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: white;
   font-family: var(--roboto);
-  background-color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  /* Stronger base shadow */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .position-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-10px);
+  border-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 30px 60px rgba(0, 0, 0, 0.2);
+  /* Stronger hover shadow */
 }
 
 .position-header {
-  padding: 1.5rem 1.5rem 0.5rem;
+  padding: 1.8rem 1.8rem 0.5rem;
+  border-radius: 12px 12px 0 0;
 }
 
 .position-body {
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 1.8rem 1.8rem;
+  border-radius: 0 0 12px 12px;
 }
 
 .position-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #2d3748;
-  font-family: var(--roboto);
+  font-size: 1.25rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 0;
 }
 
 .company-details {
-  color: #4a5568;
+  color: #7f8c8d;
   font-size: 0.95rem;
-  font-family: var(--roboto);
+  margin: 0.5rem 0 0;
 }
 
 .duration {
-  color: #718096;
-  font-size: 0.9rem;
-  font-family: var(--roboto);
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.current-badge {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .achievement-paragraph p {
-  color: #4a5568;
+  color: #34495e;
   line-height: 1.7;
   font-size: 0.95rem;
-  font-family: var(--roboto);
-}
-
-.tech-stack {
-  font-family: var(--roboto);
 }
 
 .stack-title {
-  color: #2d3748;
+  color: #2c3e50;
   font-weight: 600;
   font-size: 0.95rem;
-  font-family: var(--roboto);
 }
 
 .tech-badge {
-  background-color: #f0f4f8;
-  color: #2d3748;
+  background-color: #ffffff;
+  color: #2c3e50;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
-  font-family: var(--roboto);
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 768px) {
   .section-heading {
-    font-size: 1.75rem;
-    margin: 1.5rem 0 2rem;
+    font-size: 1.8rem;
+    margin: 1.5rem 0 2.5rem;
   }
 
   .position-header,
   .position-body {
-    padding: 1.25rem;
+    padding: 1.4rem;
   }
 
   .position-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .position-header,
+  .position-body {
+    padding: 1.2rem;
+  }
+
+  .position-card:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15);
   }
 }
 </style>
