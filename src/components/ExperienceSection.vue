@@ -119,6 +119,7 @@ export default {
   border: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   font-family: var(--roboto);
+  background-color: #fff;
 }
 
 .position-card:hover {
