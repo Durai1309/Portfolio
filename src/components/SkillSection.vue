@@ -39,6 +39,9 @@
           <div class="single-brand">Vue.js</div>
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+          <div class="single-brand">Microfrontend</div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
           <div class="single-brand">HTML</div>
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6 col-6">
