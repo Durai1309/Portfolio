@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 banner-image">
-                    <img src="@/assets/banner-imagess.png" alt="banner-img" class="img-fluid" />
+                    <img src="@/assets/home-banner.png" alt="banner-img" class="img-fluid" />
                 </div>
             </div>
         </div>
