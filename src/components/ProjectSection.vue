@@ -46,14 +46,14 @@ const projects = [
   {
     title: "E-Commerce",
     description: "E-commerce project using .NET Core, Web API, REST API, MVC, microservices architecture, SQL Server, Entity Framework Core, Dependency Injection, Swagger, and implementing SOLID principles for maintainable and scalable code.",
-    image: require('@/assets/Ecommerce.jpg'),
+    image: require('@/assets/ecommerce-banner.jpg'),
     liveLink: "#",
     codeLink: "https://github.com/Durai1309/E-commerce",
   },
   {
     title: "BookSeries",
     description: "BookSeries project using .NET Core, MVC, Clean Architecture, SQL Server, Entity Framework Core, Repository Design Pattern, Dependency Injection, and implementing SOLID principles for maintainable and scalable code.",
-    image: require('@/assets/Book.jpg'),
+    image: require('@/assets/book-banner.jpg'),
     liveLink: "#",
     codeLink: "https://github.com/Durai1309/BookSeries",
   }

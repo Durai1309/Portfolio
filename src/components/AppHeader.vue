@@ -81,16 +81,32 @@ export default {
           behavior: 'smooth'
         });
       }
+    },
+
+    handleClickOutside(event) {
+      const navbarCollapse = this.$refs.navbarCollapse;
+      const navbarToggler = this.$refs.navbarToggler;
+
+      const isClickInsideNavbar = navbarCollapse.contains(event.target) || navbarToggler.contains(event.target);
+
+      if (!isClickInsideNavbar && navbarCollapse.classList.contains('show')) {
+        navbarCollapse.classList.remove('show');
+        document.body.style.overflow = '';
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      }
     }
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
+    document.addEventListener('click', this.handleClickOutside);
   },
   beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    document.removeEventListener('click', this.handleClickOutside);
   }
 }
 </script>
+
 
 <style scoped>
 .header_area {

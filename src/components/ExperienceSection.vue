@@ -30,7 +30,8 @@
                 collaboration.
                 Enforce SOLID principles and Clean Architecture to ensure maintainable, testable, and scalable
                 codebases.
-                Integrate CI/CD pipelines (Bamboo and Bitbucket) to streamline deployments and improve delivery efficiency.
+                Integrate CI/CD pipelines (Bamboo and Bitbucket) to streamline deployments and improve delivery
+                efficiency.
                 Actively participate in Agile ceremonies—sprint planning, backlog grooming, and reviews—to ensure
                 alignment with business objectives.
               </p>
@@ -86,7 +87,8 @@
                 extensible design.
                 Managed CI/CD pipelines using Bamboo and Bitbucket to enable reliable software delivery through
                 continuous integration and deployment.
-                Practiced Agile methodologies by participating in sprint planning, backlog refinement, and sprint reviews
+                Practiced Agile methodologies by participating in sprint planning, backlog refinement, and sprint
+                reviews
                 to prioritize tasks and meet client objectives.
               </p>
             </div>
